@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+<remita_standard_failure>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="remita/standard_failure" name="remita_standard_failure" template="remita/standard/failure.phtml">
+        </block>
+    </reference>
+</remita_standard_failure>
+
+<remita_standard_success>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="remita/standard_success" name="remita_standard_success" template="remita/standard/success.phtml">
+        </block>
+    </reference>
+</remita_standard_success>
+
+</layout>

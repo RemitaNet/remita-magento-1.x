@@ -1,0 +1,7 @@
+<layout>
+    <adminhtml_sales_order_view>
+        <reference name="sales_order_tabs">
+            <action method="addTab"><name>adminhtml_order_view_tab_query</name><block>remita/adminhtml_order_view_tab_query</block></action>
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

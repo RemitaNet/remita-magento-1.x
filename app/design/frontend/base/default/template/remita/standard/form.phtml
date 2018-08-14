@@ -1,0 +1,20 @@
+<fieldset class="form-list">
+     <?php $_code=$this->getMethodCode(); $logourl =  $this->getSkinUrl('images/remita-logo.png');?>
+    <ul id="payment_form_<?php echo $_code ?>" style="display:none">
+	<li>
+	  <?php echo $this->__('<img src="'.$logourl.'" />') ?>            
+	</li>
+	  <li>
+        <label class="required" for="ccsave_cc_type"><em>*</em>Select Payment Option</label>
+        <div class="input-box">
+           <select class="required-entry" title="Credit Card Type" name="payment[cc_type]" id="ccsave_cc_type" autocomplete="off">
+        <option value=""><?php echo $this->__('--Please Select--') ?></option>
+                       <?php foreach ($this->getEnabledPaymentTypes() as $_paymentoptionCode => $_paymentoptionName): ?>
+                    <option value="<?php echo $_paymentoptionCode ?>"><?php echo $_paymentoptionName ?></option>
+                <?php endforeach ?>
+            </select>
+        </div>
+    </li>
+
+    </ul>
+	</fieldset>
